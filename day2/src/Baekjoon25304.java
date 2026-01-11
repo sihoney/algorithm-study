@@ -1,29 +1,34 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
-// 영수증
-// http://acmicpc.net/problem/25304
 public class Baekjoon25304 {
-    public static void main(String[] args) throws Exception {
+
+    public static void main(String[] args) throws IOException{
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        long X = Long.parseLong(br.readLine());
-        int N = Integer.parseInt(br.readLine());
+        Integer X = Integer.parseInt(br.readLine()); // 총 금액
 
-        long sum = 0;
+        Integer N = Integer.parseInt(br.readLine()); // 구매한 물건 종류의 수
 
-        for (int i = 0; i < N; i++) {
-            String[] parts = br.readLine().split(" ");
-            long price = Long.parseLong(parts[0]);
-            long count = Long.parseLong(parts[1]);
+        Integer A = 0;
 
-            sum += price * count;
+        for(int i = 0; i < N; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
+            int a = Integer.parseInt(st.nextToken());
+            int b = Integer.parseInt(st.nextToken());
+
+            A += a * b;
         }
 
-        if (sum == X) {
+        if(X.equals(A)) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
         }
     }
 }
+
