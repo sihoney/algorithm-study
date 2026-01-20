@@ -27,7 +27,7 @@ public class PrimeCount_1978 {
     static boolean isPrime(int v) {
         if(v == 1) return false;
 
-        for(int i = 2; i < v; i++) {
+        for(int i = 2; i <= Math.sqrt(v); i++) { // 2 ~ 루트 v
             if(v % i == 0) return false;
         }
 
@@ -38,5 +38,5 @@ public class PrimeCount_1978 {
 /**
  * prime
  * 1보다 큰 자연수 중 1과 자기 자신만을 약수로 갖는 수
- * 2, 3, 5, 7 등
+ * 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 등
  */

@@ -35,7 +35,7 @@ public class PrimeRange_2581 {
     static boolean isPrime(int v) {
         if(v == 1) return false;
 
-        for(int i = 2; i < v; i++) {
+        for(int i = 2; i <= Math.sqrt(v); i++) { // 2 ~ 루트 v
             if(v % i == 0) return false;
         }
 
