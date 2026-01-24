@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 // 체스판 다시 칠하기
 // https://www.acmicpc.net/problem/1018
 public class ChessboardRepaint_1018 {
-    public static void main(String[] args) throws IOException {
+    public static void main_answer_ai(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
