@@ -33,15 +33,12 @@ public class StarPrint02_2447
 
     static void starBox(int n) { // n = 3
         if(n == 1) {
-            pattern_curr = new char[3][3];
-            pattern_curr[0] = new char[]{'*', '*', '*'};
-            pattern_curr[1] = new char[]{'*', '*', '*'};
-            pattern_curr[2] = new char[]{'*', '*', '*'};
+            pattern_curr = new char[1][1];
+            pattern_curr[0][0] = '*';
             return;
         }
 
         starBox(n / 3); // starBox(1)
-        // pattern_accu = new char[1][1] {['*']} (?)
 
         // accu 갱신
         pattern_accu = pattern_curr;
