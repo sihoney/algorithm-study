@@ -1,4 +1,4 @@
-package data_structure;
+package data_structure.core;
 
 import java.util.NoSuchElementException;
 
@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
  * 인덱스 이동은 (index + 1) % capacity
  */
 
-class MyQueue {
+public class MyQueue {
     private final int[] arr;
     private int front; // 현재 맨 앞 원소 위치
     private int rear;  // 다음에 삽입할 위치

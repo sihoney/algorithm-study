@@ -1,4 +1,4 @@
-package data_structure;
+package data_structure.core;
 
 import java.util.NoSuchElementException;
 
@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
  * removeLast()는 단일 연결 리스트라면 이전 노드를 찾기 위해 순회 필요 (이거 말로 설명하면 점수 잘 나옴)
  */
 
-class MyLinkedList {
+public class MyLinkedList {
     private static class Node {
         int val;
         Node next;

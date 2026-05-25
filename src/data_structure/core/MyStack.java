@@ -1,8 +1,8 @@
-package data_structure;
+package data_structure.core;
 
 import java.util.NoSuchElementException;
 
-class MyStack {
+public class MyStack {
     private final int[] arr;
     private int top; // 다음에 들어갈 위치(=size)
 
